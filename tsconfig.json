@@ -53,11 +53,6 @@
   },
   // include all sources and JSON.
   "include": ["${configDir}/", "${configDir}/**/*.json"],
-  // exclude Node modules, build artifacts, colocated tests, and test utils.
-  "exclude": [
-    "**/node_modules/",
-    "**/dist/",
-    "${configDir}/**/*.test.*",
-    "${configDir}/**/test/"
-  ]
+  // exclude colocated tests and test utils.
+  "exclude": ["${configDir}/**/*.test.*", "${configDir}/**/test/"]
 }
