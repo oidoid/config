@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig.json",
+
+  "compilerOptions": {
+    // enable incremental builds.
+    "composite": true,
+
+    // enable type-stripping.
+    "allowImportingTsExtensions": true,
+
+    // only allow type-strippable syntax.
+    "erasableSyntaxOnly": true,
+
+    // maximize type checking.
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitOverride": true,
+    "noUncheckedIndexedAccess": true,
+    "noUncheckedSideEffectImports": true,
+    "noUnusedLocals": true,
+    "resolveJsonModule": true,
+    "strict": true,
+
+    // projects add types as needed.
+    "lib": ["ES2023", "ESNext.Disposable"],
+    "types": [],
+
+    "isolatedDeclarations": true, // require explicit types.
+
+    // improve compatibility with compilers that aren't type system aware.
+    "isolatedModules": true,
+
+    "esModuleInterop": true, // use ESM.
+
+    // allow JSON type-checking and imports.
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+
+    "rewriteRelativeImportExtensions": true, // rewrite .ts imports to .js.
+
+    // assume library types are checked and compatible.
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+
+    "sourceMap": true,
+    "declarationMap": true, // map back to original sources, not .d.ts.
+
+    "target": "ES2023",
+
+    // don't transform type-only imports.
+    "verbatimModuleSyntax": true
+  },
+  // include all sources and JSON.
+  "include": ["${configDir}/", "${configDir}/**/*.json"],
+  // exclude colocated tests and test utils.
+  "exclude": ["${configDir}/**/*.test.*", "${configDir}/**/test/"]
+}
