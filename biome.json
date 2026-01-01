@@ -1,6 +1,7 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.3.10/schema.json",
   "css": {"formatter": {"enabled": true, "quoteStyle": "single"}},
+  "files": {"includes": ["**", "!dist"]},
   "formatter": {
     "bracketSpacing": false,
     "enabled": true,
