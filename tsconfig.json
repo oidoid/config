@@ -37,9 +37,6 @@
     "module": "ESNext",
     "moduleResolution": "Bundler",
 
-    // don't clear watch logs which would interfere with parallel tools.
-    "preserveWatchOutput": true,
-
     "rewriteRelativeImportExtensions": true, // rewrite .ts imports to .js.
 
     // assume library types are checked and compatible.
