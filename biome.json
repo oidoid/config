@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.3.10/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.3.11/schema.json",
   "css": {"formatter": {"enabled": true, "quoteStyle": "single"}},
   "files": {"includes": ["**", "!dist"]},
   "formatter": {
@@ -32,7 +32,18 @@
         "noInferrableTypes": "off",
         "noNonNullAssertion": "off",
         "noParameterAssign": "off",
-        "useNumberNamespace": "off"
+        "useNumberNamespace": "off",
+        "noRestrictedImports": {
+          "level": "warn",
+          "options": {
+            "paths": {
+              "@oidoid/void": {
+                "allowImportNames": ["*"],
+                "message": "use a namespace import: `import * as V from '@oidoid/void'`."
+              }
+            }
+          }
+        }
       },
       "suspicious": {
         "noAssignInExpressions": "off",
