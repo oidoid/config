@@ -20,7 +20,6 @@
     "noUnusedLocals": true,
     "resolveJsonModule": true,
 
-    // projects add types as needed.
     "lib": ["ES2023", "ESNext.Disposable"],
 
     "outDir": "${configDir}/dist/",
@@ -31,6 +30,7 @@
     "isolatedModules": true,
 
     // allow JSON type-checking and imports.
+    "module": "ESNext", // to-do: remove. this is supposed to be the default.
     "moduleResolution": "Bundler",
 
     "rewriteRelativeImportExtensions": true, // rewrite .ts imports to .js.
