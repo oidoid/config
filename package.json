@@ -5,11 +5,11 @@
   },
   "bugs": "https://github.com/oidoid/config/issues",
   "dependencies": {
-    "@biomejs/biome": "2.4.10"
+    "@biomejs/biome": "2.5.0"
   },
   "description": "oidoid tsconfig and Biome config.",
   "devDependencies": {
-    "typescript": "6.0.2"
+    "typescript": "6.0.3"
   },
   "engines": {
     "node": ">=24.0"
