@@ -1,10 +1,8 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.6.2/schema.json",
-  "css": {"formatter": {"enabled": true, "quoteStyle": "single"}},
+  "css": {"formatter": {"quoteStyle": "single"}},
   "files": {"includes": ["**", "!dist/"]},
-  "formatter": {
-    "bracketSpacing": false,
-    "enabled": true,
+  "formatter": {"bracketSpacing": false,
     "indentStyle": "space"
   },
   "html": {"formatter": {"enabled": true, "indentScriptAndStyle": true}},
@@ -29,10 +27,7 @@
       },
       "complexity": {"noThisInStatic": "off"},
       "style": {
-        "noInferrableTypes": "off",
         "noNonNullAssertion": "off",
-        "noParameterAssign": "off",
-        "useNumberNamespace": "off",
         "noRestrictedImports": {
           "level": "warn",
           "options": {
