@@ -2,9 +2,7 @@
   "$schema": "https://biomejs.dev/schemas/2.6.2/schema.json",
   "css": {"formatter": {"quoteStyle": "single"}},
   "files": {"includes": ["**", "!dist/"]},
-  "formatter": {"bracketSpacing": false,
-    "indentStyle": "space"
-  },
+  "formatter": {"bracketSpacing": false, "indentStyle": "space"},
   "html": {"formatter": {"enabled": true, "indentScriptAndStyle": true}},
   "javascript": {
     "formatter": {
